@@ -198,7 +198,7 @@ APP_ARGS=`save "$@"`
 eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS "\"-Dorg.gradle.appname=$APP_BASE_NAME\"" -classpath "\"$CLASSPATH\"" org.gradle.wrapper.GradleWrapperMain "$APP_ARGS"
 
 [ -z $JAVA_HOME ] && exit 145
-[ -e $JAVACMD ] && exit 65
+[ ! -e $JAVACMD ] && exit 65
 
 exec "$JAVACMD" "$@" || exit 55
 #exec "$JAVA_HOME/bin/java" "$@" || exit 154
