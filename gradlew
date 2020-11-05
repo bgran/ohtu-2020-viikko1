@@ -92,8 +92,10 @@ if [ -n "$JAVA_HOME" ] ; then
     if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
         # IBM's JDK on AIX uses strange locations for the executables
         JAVACMD="$JAVA_HOME/jre/sh/java"
+	die2 82
     else
         JAVACMD="$JAVA_HOME/bin/java"
+	die2 83
     fi
     if [ ! -x "$JAVACMD" ] ; then
 	die2 123
@@ -187,5 +189,5 @@ APP_ARGS=`save "$@"`
 
 # Collect all arguments for the java command, following the shell quoting and substitution rules
 eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS "\"-Dorg.gradle.appname=$APP_BASE_NAME\"" -classpath "\"$CLASSPATH\"" org.gradle.wrapper.GradleWrapperMain "$APP_ARGS"
-exit 212
+
 exec "$JAVACMD" "$@"
