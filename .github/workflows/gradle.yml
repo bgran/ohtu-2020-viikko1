@@ -15,8 +15,8 @@ jobs:
     - name: PRKL
       run: /bin/true || exit 75
     - name: Grant execute permission for gradlew
-      run:  chmod +x ./gradlew || exit 76
+      run: chmod +x ./gradlew || exit 76
     - name: Cleanup and build
       run: ./gradlew build || exit 122
     - name: Test with Gradle
-      run: exit 132 &&./gradlew test || exit 123
+      run: ./gradlew test || exit 123
