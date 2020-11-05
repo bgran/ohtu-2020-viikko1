@@ -86,10 +86,10 @@ esac
 
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
-JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
-JBIN="$JAVA_HOME/bin/java"
-[ ! -e $JBIN ] && exit 12
-[ ! -x $JBIN ] && exit 13
+#JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+#JBIN="$JAVA_HOME/bin/java"
+[ ! -z $JAVA_HOME ] && exit 142
+[ -z $JAVA_HOME ] && exit 143
 
 
 # Determine the Java command to use to start the JVM.
