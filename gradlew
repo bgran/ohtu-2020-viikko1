@@ -91,8 +91,8 @@ CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 #[ ! -z $JAVA_HOME ] && exit 142
 #[ -z $JAVA_HOME ] && exit 143
 #
-[ -x $JAVA_HOME/bin/java ] && exit 144
-[ ! -x $JAVA_HOME/bin/java ] && exit 145
+#[ -x $JAVA_HOME/bin/java ] && exit 144
+#[ ! -x $JAVA_HOME/bin/java ] && exit 145
 
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then
