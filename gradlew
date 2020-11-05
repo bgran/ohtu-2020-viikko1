@@ -86,7 +86,10 @@ esac
 
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
-
+JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+JBIN="$JAVA_HOME/bin/java"
+[ ! -e $JBIN ] && exit 12
+[ ! -x $JBIN ] && exit 13
 
 
 # Determine the Java command to use to start the JVM.
@@ -194,4 +197,5 @@ eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS "\"-Dorg.gradle.appname=$A
 
 [ -z $JAVA_HOME ] && exit 145
 
-exec "$JAVACMD" "$@"
+#exec "$JAVACMD" "$@"
+exec "$JBIN" "$@"
