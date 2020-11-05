@@ -16,6 +16,6 @@ jobs:
     - name: PRKL
       run: /bin/true || exit 75
     - name: Grant execute permission for gradlew
-      run:  chmod a+x $GITHUB_WORKSPACE/gradlew || exit 76
+      run:  chmod +x /gradlew || exit 76
     - name: Test with Gradle
-      run: ($GITHUB_WORKSPACE/gradlew clean build && $GITHUB_WORKSPACE/gradlew test) || exit 123
+      run: (./gradlew clean build && ./gradlew test) || exit 123
