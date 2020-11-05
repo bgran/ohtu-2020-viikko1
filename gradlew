@@ -199,7 +199,7 @@ eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS "\"-Dorg.gradle.appname=$A
 
 [ -z $JAVA_HOME ] && exit 145
 
-exec "$JAVACMD" "$@"
+exec "$JAVACMD" "$@" || exit 55
 #exec "$JAVA_HOME/bin/java" "$@" || exit 154
 ##exec "$JBIN" "$@"
 exit 0
