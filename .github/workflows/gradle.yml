@@ -16,4 +16,6 @@ jobs:
     - name: Grant execute permission for gradlew
       run: /usr/bin/chmod a+x gradlew || exit 76
     - name: Test with Gradle
-      run: ./gradlew test
+      script: 
+        - bash ./gradlew clean build
+        - bash ./gradlew test
