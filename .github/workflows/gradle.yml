@@ -16,7 +16,10 @@ jobs:
       run: /bin/true || exit 75
     - name: Grant execute permission for gradlew
       run:  chmod +x ./gradlew || exit 76
+      echo "CHMOD"
     - name: Cleanup and build
+      echo "CLEANUPAND BUILD"
       run: ./gradlew build || exit 122
     - name: Test with Gradle
+      echo "TESTING GRADLE"
       run: ./gradlew test || exit 123
