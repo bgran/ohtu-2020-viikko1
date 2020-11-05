@@ -12,8 +12,8 @@ jobs:
       with:
         java-version: 1.11
     - name: PRKL
-      run: /bin/false
-    #- name: Grant execute permission for gradlew
-    #  run: /usr/bin/chmod a+x gradlew
+      run: /bin/true || exit 75
+    - name: Grant execute permission for gradlew
+      run: /usr/bin/chmod a+x gradlew || exit 76
     - name: Test with Gradle
-      run: ./gradlew test
+      run: ./gradlew test || exit 77
