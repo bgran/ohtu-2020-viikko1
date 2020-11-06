@@ -17,7 +17,6 @@ public class VarastoTest {
 
     @Before
     public void setUp() {
-	System.exit(
         varasto = new Varasto(10);
     }
 	@Test
