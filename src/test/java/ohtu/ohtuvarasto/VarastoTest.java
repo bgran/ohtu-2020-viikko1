@@ -17,11 +17,11 @@ public class VarastoTest {
 
     @Before
     public void setUp() {
-        varasto = new Varasto(10);
+        //varasto = new Varasto(10);
     }
 	@Test
 	public void ykkoTesti() {
-		assertEquals(1,1, vertailutTarkkuus);
+		//assertEquals(1,1, vertailutTarkkuus);
 	}
 /*
     @Test
