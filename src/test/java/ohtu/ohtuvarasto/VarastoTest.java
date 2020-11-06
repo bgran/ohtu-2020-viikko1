@@ -21,7 +21,7 @@ public class VarastoTest {
     }
 	@Test
 	public void ykkoTesti() {
-		//assertEquals(1,1, vertailutTarkkuus);
+		assertEquals(1,1, vertailutTarkkuus);
 	}
 /*
     @Test
