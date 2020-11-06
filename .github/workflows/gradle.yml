@@ -12,7 +12,7 @@ jobs:
       with:
         java-version: 1.11
     - name: Grant execute privilege to gradlew
-      run: chmod +x gradlew
+      run: chmod +x gradlew || exit 42
     - name: Test with gradle
-      run: ./gradlew test
+      run: ./gradlew test || exit 43
 
