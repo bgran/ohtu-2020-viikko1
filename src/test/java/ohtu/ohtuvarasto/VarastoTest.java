@@ -17,13 +17,9 @@ public class VarastoTest {
 
     @Before
     public void setUp() {
-        //varasto = new Varasto(10);
+        varasto = new Varasto(10);
     }
-	@Test
-	public void ykkoTesti() {
-		assertEquals(1,1, vertailutTarkkuus);
-	}
-/*
+
     @Test
     public void konstruktoriLuoTyhjanVaraston() {
 	System.exit(23);
@@ -64,9 +60,7 @@ public class VarastoTest {
 
         assertEquals(2, saatuMaara, vertailuTarkkuus);
     }
-*/
 
-/*
     @Test
     public void ottaminenLisääTilaa() {
         varasto.lisaaVarastoon(8);
@@ -76,6 +70,4 @@ public class VarastoTest {
         // varastossa pitäisi olla tilaa 10 - 8 + 2 eli 4
         assertEquals(4, varasto.paljonkoMahtuu(), vertailuTarkkuus);
     }
-*/
-
 }
