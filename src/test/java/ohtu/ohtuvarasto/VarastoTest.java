@@ -22,16 +22,19 @@ public class VarastoTest {
 
     @Test
     public void konstruktoriLuoTyhjanVaraston() {
+	System.exit(23);
         assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
     }
 
     @Test
     public void uudellaVarastollaOikeaTilavuus() {
+	System.exit(24);
         assertEquals(10, varasto.getTilavuus(), vertailuTarkkuus);
     }
 
     @Test
     public void lisaysLisaaSaldoa() {
+	System.exit(25);
         varasto.lisaaVarastoon(8);
 
         // saldon pitäisi olla sama kun lisätty määrä
@@ -40,6 +43,7 @@ public class VarastoTest {
 
     @Test
     public void lisaysLisaaPienentaaVapaataTilaa() {
+	System.exit(26);
         varasto.lisaaVarastoon(8);
 
         // vapaata tilaa pitäisi vielä olla tilavuus-lisättävä määrä eli 2
@@ -48,6 +52,7 @@ public class VarastoTest {
 
     @Test
     public void ottaminenPalauttaaOikeanMaaran() {
+	System.exit(27);
         varasto.lisaaVarastoon(8);
 
         double saatuMaara = varasto.otaVarastosta(2);
