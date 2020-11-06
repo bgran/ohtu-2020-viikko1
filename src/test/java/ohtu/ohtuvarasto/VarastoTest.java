@@ -64,37 +64,5 @@ public class VarastoTest {
         // varastossa pitäisi olla tilaa 10 - 8 + 2 eli 4
         assertEquals(4, varasto.paljonkoMahtuu(), vertailuTarkkuus);
     }
-/*
-
-	@Test
-	public void testTest1() {
-		assertEquals(0, 0, vertailuTarkkuus);
-	}
-	@Test
-	public void testTest2() {
-		assertEquals(1, 1, vertailuTarkkuus);
-	}
-        @Test 
-        public void testTest3() {
-                assertEquals(1, 1, vertailuTarkkuus);
-        }
-
-        @Test 
-        public void testTest4() {
-                assertEquals(1, 1, vertailuTarkkuus);
-        }
-
-        @Test 
-        public void testTest5() {
-                assertEquals(1, 1, vertailuTarkkuus);
-        }
-
-        @Test 
-        public void testTest6() {
-                assertEquals(1, 1, vertailuTarkkuus);
-        }
-*/
-
-
 
 }
