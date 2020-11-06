@@ -17,9 +17,14 @@ public class VarastoTest {
 
     @Before
     public void setUp() {
+	System.exit(
         varasto = new Varasto(10);
     }
-
+	@Test
+	public void ykkoTesti() {
+		assertEquals(1,1, vertailutTarkkuus);
+	}
+/*
     @Test
     public void konstruktoriLuoTyhjanVaraston() {
 	System.exit(23);
@@ -60,6 +65,7 @@ public class VarastoTest {
 
         assertEquals(2, saatuMaara, vertailuTarkkuus);
     }
+*/
 
 /*
     @Test
