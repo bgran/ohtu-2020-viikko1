@@ -17,21 +17,26 @@ public class Varasto {
         saldo = 0;     // oletus: varasto on tyhjä
     }
 
-    public Varasto(double tilavuus, double alkuSaldo) { // kuormitetaan
+
+    private void set_tilavuus(double tila) {
         if (tilavuus > 0.0) {
-            this.tilavuus = tilavuus;
-        } else // virheellinen, nollataan
-        {
-            this.tilavuus = 0.0;  // => käyttökelvoton varasto
-        }
-        if (alkuSaldo < 0.0) {
-            this.saldo = 0.0;
-        } else if (alkuSaldo <= tilavuus) // mahtuu
-        {
-            this.saldo = alkuSaldo;
+            this.tilavuus = tila;
         } else {
-            this.saldo = tilavuus;  // täyteen ja ylimäärä hukkaan!
+            this.tilavuus = 0.0;
         }
+    }
+    private void set_alkusaldo(double alku, double tila) {
+        if (alku < 0.0) {
+            this.saldo = 0.0;
+        } else if (alku <= tila) {
+            this.saldo = alku;
+        } else {
+            this.saldo = tila;
+        }
+    }
+    public Varasto(double tilavuus, double alkuSaldo) { // kuormitetaan
+        set_tilavuus(tilavuus);
+        set_alkusaldo(alkuSaldo, tilavuus);
     }
 
     // --- ottavat aksessorit eli getterit: ---
@@ -80,4 +85,5 @@ public class Varasto {
     public String toString() {
         return ("saldo = " + saldo + ", vielä tilaa " + paljonkoMahtuu());
     }
+    
 }
