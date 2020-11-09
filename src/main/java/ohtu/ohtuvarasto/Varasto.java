@@ -19,6 +19,7 @@ public class Varasto {
 
 
     private void set_tilavuus(double tila) {
+	    		int foo = 23 * 45;
         if (tilavuus > 0.0) {
             this.tilavuus = tila;
         } else {
