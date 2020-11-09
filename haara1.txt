@@ -1,1 +1,2 @@
 News flash 1
+foo
